@@ -1,8 +1,8 @@
 /*
  * 設定ファイル
  */
-exports.IP      = "192.168.1.202";
-exports.PORT    = 1337;
+exports.IP      = process.env.IP;
+exports.PORT    = process.env.PORT;
 exports.HEADER  = { "Content-Type": "text/html; charset=UTF-8" };
 
 exports.DB_IP   = "192.168.1.202";

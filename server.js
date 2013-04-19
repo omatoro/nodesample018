@@ -6,8 +6,9 @@
  * モジュール読み込み
  */
 var http = require("http");
+var path = require("path");
 var querystring = require("querystring");
-var setting = require("/home/virtualserver/デスクトップ/project/999_param.js");
+var setting = require(path.resolve(".") + "/param.js");
 
 /*
  * 書き込みデータ
@@ -27,8 +28,8 @@ var HTML_HEAD = '\
 ';
 
 var getHtmlBody = function (dataArray) {
-	var content = '\
-	<body>\
+    var content = '\
+    <body>\
 		<div>\
 			<h1>簡易掲示板</h1>\
 			<h2>サーバを停止すると書き込み内容も削除されます</h2>\
