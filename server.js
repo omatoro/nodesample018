@@ -1,8 +1,4 @@
 /*
- * hello, world
- * IPなど設定：http://testcording.com/?p=1164
- */
-/*
  * モジュール読み込み
  */
 var http = require("http");
